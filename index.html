@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container col-md-6 offset-md-3">
+<form class="" novalidate id="myform">
+		<div>
+			<label for="textoEntrada">Nome: </label>
+    		<input type="text" class="form-control" id="nome">
+		</div>
+		<div>
+			<label for="varAltura">Altura(m): </label>
+			<input type="text" class="form-control" id="altura">
+		</div>
+		<div>
+			<label for="varPeso">Peso(kg): </label>
+			<input type="text" class="form-control" id="peso">
+		</div>
+</form>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Altura</th>
+			<th>Peso</th>
+			<th>IMC</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th id="thNome"></th>
+			<th id="thAltura"></th>
+			<th id="thPeso"></th>
+			<th id="thIMC"></th>
+		</tr>
+	</tbody>
+</table>
+
+<button type="button" class="btn btn-primary col-md-6 offset-md-3" onclick="imc();">Calcular IMC</button>
+
+</div>
+<script type="text/javascript" src="imc.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
